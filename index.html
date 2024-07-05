@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Git atsiskiatymas</title>
   <link rel="stylesheet" href="main.css">
+  <script type="module" src="main.js"></script>
 </head>
 
 <body>
@@ -19,20 +20,25 @@
     <hr>
     <div class="vl"></div>
     <div class="footer">
-      <a href="">INTRO</a>
-      <a href="">WORK</a>
-      <a href="">ABOUT</a>
-      <a href="">CONTACT</a>
+      <a href="" id="introBtn">INTRO</a>
+      <a href="" id="workBtn">WORK</a>
+      <a href="" id="aboutBtn">ABOUT</a>
+      <a href="" id="contactBtn">CONTACT</a>
     </div>
 
   </section>
-  <section id="intro">
-    <h2>INTRO</h2>
-    <br>
-    <video controls>
-      <source src="./resources/tab-1.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
+  <section id="intro" class="displayNone tabSection">
+    <div class="header">
+      <h2>INTRO</h2>
+      <hr>
+    </div>
+    <a href=""><i class="bi bi-x h2"></i></a>
+    <div class="visual">
+      <video controls>
+        <source src="./resources/tab-1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </div>
     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et praesentium eius ducimus reiciendis quod fugiat modi
       labore tempore cupiditate accusamus voluptas eum exercitationem quaerat id sint nemo quae fuga inventore debitis
       porro dicta, facilis doloribus ab! Fuga sint alias sapiente consequatur, obcaecati eius ipsa accusamus
@@ -53,10 +59,15 @@
       ipsam dolores architecto magni itaque explicabo amet, officiis ullam, enim ad. Sapiente totam sunt explicabo eum.
       Inventore, laboriosam.</p>
   </section>
-  <section id="work">
-    <h2>WORK</h2>
-    <br>
-    <img src="./resources/tab-2.jpg" alt="Work image">
+  <section id="work" class="displayNone tabSection">
+    <div class="header">
+      <h2>WORK</h2>
+      <hr>
+    </div>
+    <a href=""><i class="bi bi-x h2"></i></a>
+    <div class="visual">
+      <img src="./resources/tab-2.jpg" alt="Work image">
+    </div>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ad, nihil fugiat mollitia est quos voluptatum
       eos laboriosam error, cumque tenetur aspernatur animi consequuntur corrupti in rem, placeat iste impedit
       repudiandae ab repellat magni omnis a eius? Quibusdam assumenda dolor tempore voluptatum blanditiis dolores
@@ -72,10 +83,15 @@
       voluptatum? Provident quos modi eveniet in, adipisci odio. Voluptate labore minima, architecto hic fuga quod
       laboriosam ullam quidem odit molestiae eligendi, aliquid eos sint, deserunt assumenda!</p>
   </section>
-  <section id="about">
-    <h2>ABOUT</h2>
-    <br>
-    <img src="./resources/tab-3.jpg" alt="About image">
+  <section id="about" class="displayNone tabSection">
+    <div class="header">
+      <h2>ABOUT</h2>
+      <hr>
+    </div>
+    <a href=""><i class="bi bi-x h2"></i></a>
+    <div class="visual">
+      <img src="./resources/tab-3.jpg" alt="About image">
+    </div>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ad, nihil fugiat mollitia est quos voluptatum
       eos laboriosam error, cumque tenetur aspernatur animi consequuntur corrupti in rem, placeat iste impedit
       repudiandae ab repellat magni omnis a eius? Quibusdam assumenda dolor tempore voluptatum blanditiis dolores
@@ -91,10 +107,15 @@
       voluptatum? Provident quos modi eveniet in, adipisci odio. Voluptate labore minima, architecto hic fuga quod
       laboriosam ullam quidem odit molestiae eligendi, aliquid eos sint, deserunt assumenda!</p>
   </section>
-  <section id="contact">
-    <h2>CONTACT</h2>
-    <br>
-    <img src="./resources/tab-4.jpg" alt="Contact image">
+  <section id="contact" class="displayNone tabSection">
+    <div class="header">
+      <h2>CONTACT</h2>
+      <hr>
+    </div>
+    <a href=""><i class="bi bi-x h2"></i></a>
+    <div class="visual">
+      <img src="./resources/tab-4.jpg" alt="Contact image">
+    </div>
     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt ad, nihil fugiat mollitia est quos voluptatum
       eos laboriosam error, cumque tenetur aspernatur animi consequuntur corrupti in rem, placeat iste impedit
       repudiandae ab repellat magni omnis a eius? Quibusdam assumenda dolor tempore voluptatum blanditiis dolores
