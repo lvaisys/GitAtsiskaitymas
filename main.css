@@ -1,6 +1,7 @@
 @import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
 @import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 .displayNone {
   display: none !important;
 }
@@ -20,6 +21,14 @@ body {
 
   a {
     color: white;
+  }
+
+  >main {
+    background-color: rgba(0, 0, 0, 0.411);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    left: 0;
   }
 }
 
@@ -47,6 +56,18 @@ body {
     padding: 30px;
   }
 
+  >p {
+    >a {
+      text-decoration: dashed;
+      transition: transform 2s;
+    }
+
+    >a:hover {
+      color: rgb(79, 195, 248);
+      cursor: grabbing;
+    }
+  }
+
   >.footer {
     display: flex;
     flex-direction: column;
@@ -57,6 +78,12 @@ body {
       text-align: center;
       padding: 15px;
       text-decoration: none;
+      transition: transform 2s;
+    }
+
+    a:hover {
+      background-color: rgba(175, 175, 175, 0.808);
+      cursor: grabbing;
     }
   }
 
@@ -76,6 +103,7 @@ section.tabSection {
       height: 30px;
     }
   }
+
   a:hover {
     transform: rotate(90deg);
   }
