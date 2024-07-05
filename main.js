@@ -19,3 +19,8 @@ document.getElementById("contactBtn").addEventListener('click', (e) => {
   document.getElementById("contact").classList.remove("displayNone");
   document.getElementById("mainSection").classList.add("displayNone");
 })
+const mmm = document.querySelectorAll("section.tabSection>a>i").forEach(el=> el.addEventListener('click', (e) => {
+  e.preventDefault();
+  e.target.parentElement.parentElement.classList.add("displayNone");
+  document.getElementById("mainSection").classList.remove("displayNone");
+}));
