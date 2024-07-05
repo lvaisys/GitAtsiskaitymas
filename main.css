@@ -1,0 +1,77 @@
+@import url("https://necolas.github.io/normalize.css/8.0.1/normalize.css");
+
+body {
+  background-image: url("./resources/bg.jpg");
+  background-position: top center
+}
+
+#mainSection {
+  margin: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+
+  .vl {
+    border-left: 1px solid white;
+    height: 50px;
+  }
+
+  >hr {
+    width: 100%;
+    margin: 0;
+  }
+
+  >img {
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 50%;
+    padding: 30px;
+  }
+
+  >.footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    >a {
+      border: 1px solid white;
+      text-align: center;
+    }
+  }
+
+}
+
+#intro {
+  background-color: rgba(41, 40, 40, 0.815);
+
+}
+
+#work {
+  background-color: rgba(41, 40, 40, 0.815);
+}
+
+#about {
+  background-color: rgba(41, 40, 40, 0.815);
+
+}
+
+#contact {
+  background-color: rgba(41, 40, 40, 0.815);
+
+}
+
+@media (min-width: 750px) {
+  section#mainSection {
+    margin: 100px 50px;
+
+    >div.footer {
+      flex-direction: row;
+      justify-content: center;
+
+      >a {
+        padding: 3px 30px;
+      }
+    }
+  }
+}
